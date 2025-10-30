@@ -1,0 +1,84 @@
+:root {
+  --bg-color: #ffffff;
+  --text-color: #222222;
+  --accent-color: #0078ff;
+}
+
+body.dark {
+  --bg-color: #121212;
+  --text-color: #e0e0e0;
+  --accent-color: #66aaff;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+header {
+  background: var(--accent-color);
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 1em;
+  font-weight: 500;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+#theme-toggle {
+  float: right;
+  margin: 0.5em;
+  background: transparent;
+  border: none;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+main {
+  padding: 2em;
+  max-width: 800px;
+  margin: auto;
+}
+
+.project-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1em;
+  margin: 1em 0;
+  background: rgba(0,0,0,0.03);
+}
+
+footer {
+  text-align: center;
+  padding: 1em;
+  background: var(--accent-color);
+  color: white;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75em 1.25em;
+  margin-top: 0.5em;
+  background-color: var(--accent-color);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #005bb5;
+}
+
